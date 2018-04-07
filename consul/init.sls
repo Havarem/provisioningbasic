@@ -25,7 +25,7 @@ consul_prereq:
       - file: /etc/consul.d
     - defaults:
       addr: {{ grains['ip4_interfaces']['enp0s8'][0] }}
-      name: {{ grains['fqdn'] }}
+      fqdn: {{ grains['fqdn'] }}
 
 /etc/default/consul:
   file.managed:
