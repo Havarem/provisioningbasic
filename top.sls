@@ -1,4 +1,7 @@
 base:
   '*':
     - common
-    - consul
+  'master*'
+  	- consul
+  'slave*'
+  	- consulslave
